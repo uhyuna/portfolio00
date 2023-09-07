@@ -1,0 +1,357 @@
+/* header */
+header {
+    background-image: url(../img/africa1.jpg);
+    width: 100%;
+    height: 715px;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.header-txt {
+    padding-top: 13%;
+}
+.header-txt h3 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* box */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 83%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+.box img {
+    width: 24%;
+    height: 350px;
+    object-fit: cover;
+}
+.box h4 {
+    font-size: 1.2rem;
+    width: 37.5%;
+    margin-left: 5%;
+    padding-top: 60px;
+    margin-bottom: 0;
+}
+.box h5 {
+    font-size: 1rem;
+    color: #9D9D9D;
+    margin-left: 5%;
+}
+.box .right {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.right h2 {
+    font-size: 2rem;
+}
+.box .txt {
+    margin-left: 50px;
+}
+.txt h5 {
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+.txt p {
+    margin-bottom: 20px;
+}
+.schedule {
+    display: flex;
+    margin-left: 5%;
+}
+.schedule h6 {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+/* btn */
+.btn-open {
+    display: block;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 60px;
+    position: relative;
+}
+.btn-open .icon {
+    transform: rotateX(180deg);
+}
+
+.btn-close{
+    display: none;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: 105.5%;
+}
+.btn-close .icon {
+    transform: rotateX(180deg);
+}
+
+
+/* list */
+.list {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    display: none;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 35px 0;
+    width: 100%;
+    padding-left: 2%;
+    position: relative;
+}
+.filter h6 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.filter iconify-icon {
+    margin-top: 4px;
+    color: #9D9D9D;
+    margin-right: 5px;
+}
+.filter1 {
+    width: 70px;
+    height: 35px;
+    display: block;
+    color: red;
+    border: 1px solid red;
+    font-size: 0.9rem;
+    padding: 5px;
+    text-align: center;
+}
+.filter2 {
+    width: 70px;
+    height: 35px;
+    display: block;
+    color: #3366CC;
+    border: 1px solid #3366CC;
+    font-size: 0.9rem;
+    padding: 5px;
+    text-align: center;
+}
+.filter3 {
+    width: 70px;
+    height: 35px;
+    display: block;
+    color: #7B7B7B;
+    border: 1px solid #7B7B7B;
+    font-size: 0.9rem;
+    padding: 5px;
+    text-align: center;
+}
+.filter4 {
+    width: 70px;
+    height: 35px;
+    display: block;
+    color: #7B7B7B;
+    border: 1px solid #7B7B7B;
+    font-size: 0.9rem;
+    padding: 5px;
+    text-align: center;
+}
+.filter span {
+    display: block;
+    margin: 0 10px;
+}
+select {
+    background-color: #fff;
+    border: 1px solid #7B7B7B;
+    color:#7B7B7B ;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 5%;
+}
+.list-box {
+    background-color: #fff;
+    width: 92.5%;
+    height: 250px;
+    border: 1px solid #D9D9D9;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.right2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    left: 65%;
+}
+
+.right2 h2 {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 50%;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    /* margin-right: 5%; */
+    right: 0;
+}
+.btn-cart {
+    width: 220px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #C4C4C4;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 3%;
+}
+.btn-view {
+    width: 220px;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+.txt2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+.list-box span {
+    margin-top: 20px;
+}
+.txt2 h4 {
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+.txt3 {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.txt3 h6 {
+    margin: 0 10px;
+}
+.txt3 p {
+    font-size: 0.6rem;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1290px) {
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+    }
+    .filter .filter1 {display: none;}
+    .filter .filter2 {display: none;}
+    .filter .filter3 {display: none;}
+    .filter .filter4 {display: none;}
+    .list-box {height: 450px;}
+    .right {
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .right2 {
+        top: 50%;
+        right: 33%;
+        z-index: 1;
+        left: 5%;
+    }
+    .right2 h2 {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .btn {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .box img {
+        width: 100%;
+    }
+    .box h4 {
+        margin-left: 0;
+        width: 100%;
+    }
+    .box h5 {
+        margin-left: 0;
+        width: 100%;
+    }
+    .box .txt {
+        margin-left: 0;
+    }
+    .txt h5 {
+        margin-left: 0;
+        width: 100%;
+    }
+    .schedule {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .box .right {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .btn-open {
+        margin: 0;
+    }
+    .btn-close {
+        margin: 0;
+        top: 166.5%;
+    }
+} 
+@media screen and (max-width:675px) {
+    .txt3 {display: none;}
+    .right2 {width: 100%;}
+    .btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-cart {width: 80%;}
+    .btn-view {width: 80%;}
+    .list-box span {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,185 @@
+/* header */
+header {
+    background-image: url(../img/himalayas.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+}
+/* main */
+.notice-wrap {
+    margin-left: 30%;
+    margin-top: -17%;
+    margin-bottom: 20%;
+}
+.notice-wrap h4 {
+    font-size: 1.8rem;
+    margin-bottom: 80px;
+}
+.btn-wrap {
+    display: flex;
+}
+.btn {
+    border: solid 1px #3366CC;
+    border-radius: 5%;
+    padding: 0 20px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    color: #3366CC;
+}
+.btn:active {
+    background-color: #3366CC;
+    color: #fff;
+}
+.graph-title {
+    display: flex;
+    background-color: #c4c4c4;
+    width: 95%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.graph-title h5 {
+    margin: 0 10%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.txt {
+    display: flex;
+    border-bottom: 1px solid #e2e2e2;
+    width: 95%;
+    padding-top: 20px;
+}
+.txt p {
+    width: 260px;
+    margin-left: 1%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+.txt span {
+    display: block;
+    margin-left: 5%;
+}
+
+/* side-menu */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    width: 230px;
+    
+}
+.side-menu h3 {
+    width: 230px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    border-top: 1px solid #000;
+    padding-top: 25px;
+}
+.side-menu a {
+    width: 230px;
+    color: #000;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0;
+}
+
+/* pagebar */
+.page-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+.page-bar a {
+    color: #000;
+    margin-left: 5px;
+}
+.page-bar p {
+    color: #7d7d7d;
+    margin-left: 5px;
+}
+
+/* search */
+.search {
+    display: flex;
+    margin-left: 30%;
+    height: 60px;
+    margin-top: -17%;
+    margin-bottom: 5%;
+}
+input {
+    width: 1015px;
+    height: 60px;
+    border: 5px solid #3366CC;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.search p {
+    background-color: #3366CC;
+    color: #fff;
+    width: 220px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.qna-btn:hover {
+    color: #3366CC;
+}
+.notice-btn:hover {
+    color: #3366CC;
+}
+
+
+/* 미디어쿼리용 스타일 */
+.title-none {display: block;}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1449px) {
+    .side-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: 0;
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    .side-menu h3 {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 150px;
+        width: 260px;
+    }
+    .side-menu a {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+    }
+    .notice-wrap {
+        margin-top: -5%;
+    }
+    .txt p {display: none;}
+    .title-none {display: none;}
+
+}
+
+@media screen and (max-width:768px) {
+    .btn-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .btn {
+        padding: 5%;
+        margin: 1%;
+    }
+}

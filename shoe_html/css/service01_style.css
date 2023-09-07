@@ -1,0 +1,173 @@
+/* header */
+header {
+    background-image: url(../img/himalayas.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+}
+
+/* side-menu */
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    width: 230px;
+    
+}
+.side-menu h3 {
+    width: 230px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    border-top: 1px solid #000;
+    padding-top: 25px;
+}
+.side-menu a {
+    width: 230px;
+    color: #000;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0;
+}
+
+/* search */
+.search {
+    display: flex;
+    margin-left: 30%;
+    height: 60px;
+    margin-top: -17%;
+    margin-bottom: 5%;
+}
+input {
+    width: 1015px;
+    height: 60px;
+    border: 5px solid #3366CC;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.search p {
+    background-color: #3366CC;
+    color: #fff;
+    width: 220px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* QnA */
+.QnA-wrap {
+    margin-left: 30%;
+}
+.QnA-wrap h2 {
+    font-size: 1.8rem;
+    width: 93%;
+    border-bottom: 1px solid #7d7d7d;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.QnA {
+    display: flex;
+}
+.QnA span {
+    display: block;
+    width: 220px;
+}
+.QnA p {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.page-bar {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border-top: 1px solid #7d7d7d;
+    padding-top: 20px;
+}
+.page-bar a {
+    color: #000;
+    margin-left: 5px;
+}
+.page-bar p {
+    color: #7d7d7d;
+    margin-left: 5px;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8%;
+    margin-top: 30px;
+}
+.sub-contact {
+    width: 310px;
+    height: 110px;
+    background-color: #F5F5F5;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.qna-btn:hover {
+    color: #3366CC;
+}
+.notice-btn:hover {
+    color: #3366CC;
+}
+
+.qna-btn.on {
+    color: #3366CC;
+    font-weight: 400;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:1449px) {
+    .side-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: 0;
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    .side-menu h3 {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 150px;
+        width: 260px;
+    }
+    .side-menu a {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+    }
+    .notice-wrap {
+        margin-top: -5%;
+    }
+    .QnA span {display: none;}
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sub-contact {
+        margin-bottom: 3%;
+    }
+    .search {
+        margin-top: -5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+    .QnA-wrap {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+}
