@@ -1,0 +1,272 @@
+header {
+    background-image: none;
+    height: 54px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/*매장찾기*/
+.top {
+    text-align: center;
+    padding: 0 0 50px;
+    margin: 30px 0;
+}
+h1 {
+    margin-bottom: 30px;
+    margin-top: 150px;
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.local-menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 62.5%;
+}
+.local-menu p {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 1%;
+}
+.local-menu a {
+    width: 50%;
+}
+.local-menu p:nth-child(1) {
+    margin-left: 0;
+}
+.local-option {
+    display: none;
+}
+
+.search {
+    position: relative;
+    width: 42%;
+    margin: 20px auto;
+}
+input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #636363;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+
+}
+.search img {
+    position:absolute;
+    width: 32px;
+    top: 13px;
+    right: 20px;
+    margin: 0;
+}
+
+.sort-text {
+    display: flex;
+    margin: 0 20px;
+}
+.sort-text h6 {
+    font-size: 0.8rem;
+    margin-right: 90px;
+}
+.sort-text p {
+    margin: 0 10px;
+}
+.sort-top {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: #d9d9d9;
+    height: 80px;
+    line-height: 80px;
+    border-top: 2px solid #636363;
+    margin: 0 100px;
+}
+.sort-option {
+    display: none;
+}
+.sort-all {
+    margin-left: 170px;
+    margin-right: 20px;
+}
+select {
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #636363;
+    background-color: #ededed;
+}
+
+.result {
+    background-color: #f1f1f1;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 100px;
+    padding-left: 30px;
+    font-size: 0.8rem;
+}
+.result-text {
+    display: flex;
+    flex-direction: column;
+    width: 62.5%;
+    justify-content: center;
+    margin-bottom: 90px;
+    padding-top: 20px;
+}
+
+.gasan {
+    margin-left: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+}
+.gasan h6 {
+    font-size: 0.9rem;
+    margin-right: 40px;
+}
+.gasan span {
+    border: 1px solid red;
+    margin: 0 5px;
+    color: red;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+.gasan span:nth-child(3) {
+    color: green;
+    border: 1px solid green;
+    border-radius: 20px;
+    
+}
+.gasan p {
+    margin: 0 7%;
+}
+.gayang {
+    margin-left: 150px;
+    display: flex;
+    justify-content: left;
+}
+.gayang h6 {
+    font-size: 0.9rem;
+    margin-right: 40px;
+}
+.gayang span {
+    border: 1px solid red;
+    color: red;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+.gayang p:nth-child(3) {
+    margin: 0 10%;
+}
+.gayang p:nth-child(4) {
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width:1330px) {
+    .local-menu {
+        display: none;
+    }
+    .sort-text {
+        display: none;
+    }
+    .local-option {
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .sort-option {
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+        height: 35px;
+        margin-bottom: 10px;
+  
+    }
+    .sort-all {
+        margin: 0 auto;
+        width: 90%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .sort-opt {
+        margin: 0 auto;
+        width: 90%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    select {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sort-top {
+        height: 245px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 0;
+    }
+    .gasan {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #d0d0d0;
+        justify-content: center;
+    }
+    .gasan h6 {
+        margin-bottom: 10px;
+    }
+    .gasan span {
+        width: 100px;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .gasan span:nth-child(3) {
+        margin-bottom: 10px;
+    }
+    .gasan p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .result-text {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gayang {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #d0d0d0;
+        justify-content: center;
+    }
+    .gayang h6 {
+        margin-bottom: 10px;
+    }
+    .gayang span {
+        width: 100px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+  
+    .gayang p:nth-child(3) {
+        margin: 0;
+    }
+    .gayang p:nth-child(4) {
+        margin: 0;
+    } 
+    .gayang p {
+        font-size: 0.8rem;
+    }
+    
+}
