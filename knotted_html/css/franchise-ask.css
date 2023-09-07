@@ -1,0 +1,302 @@
+.form-container {
+  padding: 0;
+}
+
+/* smile logo */
+.smile-logo {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 100px auto;
+}
+/* //smile logo */
+
+/* color */
+:root {
+  --text-color: #1d1d1d;
+  --main-color: #ffeb8f;
+  --sub-color1: #ff99c0;
+  --sub-color2: #92d3c9;
+}
+
+.sub-menu2 a.on {
+  background-color: var(--main-color);
+  color: #000;
+}
+/* .gnb > li > a.on:after {
+  background-color: var(--sub-color1);
+} */
+
+/* form */
+.form-container {
+  background-color: #ffcce0;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.form-container h2 {
+  padding-top: 130px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.form-txt {
+  width: 79.1%;
+  margin: 0 auto;
+}
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  outline: 1px solid #ff2277;
+}
+input[type="text"] {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+input::placeholder {
+  font-size: 18px;
+  color: #666666;
+  font-weight: 500;
+}
+input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+  appearance: none;
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  border-radius: 50%;
+}
+[type="radio"]:last-child {
+  margin-left: 50px;
+}
+[type="radio"]:checked {
+  border: 0.4em solid rgb(255, 69, 125);
+}
+
+textarea {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  resize: none;
+  padding: 20px;
+}
+.box {
+  margin-bottom: 30px;
+}
+.name-box,
+.contact-box,
+.email-box,
+.store-box,
+.city-box {
+  display: flex;
+  align-items: center;
+}
+.box-title {
+  font-size: 22px;
+  font-weight: 700;
+  width: 120px;
+}
+.city-wrap input:last-child {
+  margin-left: 10px;
+}
+.email-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.email-wrap span {
+  display: block;
+  margin: 0 10px;
+}
+.txt-box .box-title {
+  margin-bottom: 20px;
+}
+.submit-btn {
+  width: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.submit-btn .submit {
+  border: 0;
+  border-radius: 20px;
+  background-color: white;
+  padding: 15px 30px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.submit-btn .submit:hover {
+  color: #ff2277;
+}
+/* //form */
+
+/* 미디어쿼리 */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .smile-logo {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .form-container {
+    border-radius: 30px;
+    margin: 0 6.25%;
+    margin-bottom: 50px;
+  }
+  .form-container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .form-txt {
+    width: 95%;
+    margin: 0 auto;
+  }
+  input[type="text"] {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  input::placeholder {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+  }
+  textarea {
+    height: 250px;
+  }
+  .box {
+    margin-bottom: 15px;
+  }
+  .box-title {
+    font-size: 16px;
+    font-weight: 500;
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .name-box,
+  .contact-box,
+  .email-box,
+  .store-box,
+  .city-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .email-wrap input[type="text"] {
+    max-width: 120px;
+    max-height: 30px;
+  }
+  .email-wrap span {
+    margin: 0 5px;
+  }
+  .radio-box {
+    display: flex;
+    flex-direction: row;
+  }
+  [type="radio"]:last-child {
+    margin-left: 30px;
+  }
+  .city-wrap input[type="text"] {
+    max-width: 125px;
+    height: 30px;
+  }
+  .submit-btn {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gnb > li > a.on:after {
+    background-color: transparent;
+  }
+  .gnb > li > a,
+  .depth2 li a {
+    pointer-events: none;
+  }
+  .smile-logo {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .form-container {
+    border-radius: 30px;
+    margin: 0 6.25%;
+    margin-bottom: 50px;
+  }
+  .form-container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .form-txt {
+    width: 95%;
+    margin: 0 auto;
+  }
+  input[type="text"] {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  input::placeholder {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+  }
+  textarea {
+    height: 250px;
+  }
+  .box {
+    margin-bottom: 15px;
+  }
+  .box-title {
+    font-size: 16px;
+    font-weight: 500;
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .name-box,
+  .contact-box,
+  .email-box,
+  .store-box,
+  .city-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .email-wrap input[type="text"] {
+    max-width: 120px;
+    max-height: 30px;
+  }
+  .email-wrap span {
+    margin: 0 5px;
+  }
+  .radio-box {
+    display: flex;
+    flex-direction: row;
+  }
+  [type="radio"]:last-child {
+    margin-left: 30px;
+  }
+  .city-wrap input[type="text"] {
+    max-width: 125px;
+    height: 30px;
+  }
+  .submit-btn {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+}

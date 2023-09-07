@@ -1,0 +1,145 @@
+/* color */
+:root {
+  --text-color: #1d1d1d;
+  --main-color: #ffeb8f;
+  --sub-color1: #ff99c0;
+  --sub-color2: #92d3c9;
+}
+
+.gnb > li:nth-child(3) > a.on:after {
+  background-color: var(--sub-color2);
+}
+
+.gnb > li:nth-child(4) > a.on:after {
+  background-color: var(--sub-color1);
+}
+
+/* btn-back */
+.btn-back {
+  width: 50px;
+  margin: 50px 0 0 240px;
+}
+
+/* detail-section */
+.detail {
+  padding: 100px 0 230px;
+}
+.list-wrap > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-wrap img {
+  width: 350px;
+}
+
+/* news-detail */
+.news-detail .img-wrap {
+  margin-right: 84px;
+}
+.news-detail .content-wrap span {
+  display: inline-block;
+  color: #999999;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.news-detail .content-wrap h2 {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.news-detail .content-wrap p {
+  line-height: 22px;
+}
+
+/* store-detail */
+.store-detail .img-wrap {
+  margin-right: 100px;
+}
+
+.store-detail .content-list1 .content,
+.store-detail .content-list2 .content {
+  display: flex;
+  align-items: center;
+}
+.store-detail .content-list2 {
+  display: flex;
+  align-items: center;
+}
+.store-detail .content-list2 .content:first-child {
+  margin-right: 10px;
+}
+.store-detail .content-list1 {
+  margin-bottom: 30px;
+}
+.store-detail .content-wrap h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.store-detail .content-wrap .content {
+  margin-bottom: 10px;
+}
+.store-detail .content-wrap .icon-wrap {
+  margin-right: 10px;
+}
+.store-detail .content-list2 {
+  padding-left: 5px;
+}
+
+/* tablet */
+@media screen and (max-width: 1439px) {
+  /* btn-back */
+  .btn-back {
+    display: none;
+  }
+
+  /* detali-section */
+  .detail {
+    padding: 100px 0 100px;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .img-wrap {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .news-detail .content-wrap p br {
+    display: none;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  /* btn-back */
+  .btn-back {
+    display: none;
+  }
+
+  /* detail-section */
+  .detail {
+    padding: 50px 0;
+  }
+  .list-wrap > li {
+    flex-direction: column;
+  }
+  .detail .img-wrap {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .img-wrap img {
+    width: 100%;
+  }
+
+  .news-detail .content-wrap span {
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  .news-detail .content-wrap h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .news-detail .content-wrap p {
+    font-size: 14px;
+  }
+}

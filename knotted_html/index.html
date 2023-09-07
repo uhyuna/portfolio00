@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>knotted</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="icon" href="./favicon/icon1.svg" />
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/fullpage.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+            <!-- header -->
+            <header>
+                <div class="container">
+                    <h1>
+                        <a href="./index.html"><img src="./img/logo_black.png" alt="노티드로고" /></a>
+                    </h1>
+                    <ul class="gnb">
+                        <li><a href="./knotted.html">Knotted</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./store.html">Store</a></li>
+                        <li>
+                            <a href="./community-news.html">Community</a>
+                            <ul class="depth2">
+                                <li><a href="./community-news.html">NEWS</a></li>
+                                <li><a href="./community-event.html">EVENT</a></li>
+                                <li><a href="./community-faq.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./franchise-competition.html">Franchise</a>
+                            <ul class="depth2">
+                                <li><a href="./franchise-competition.html">경쟁력</a></li>
+                                <li><a href="./franchise-procedure.html">개설 절차</a></li>
+                                <li><a href="./franchise-ask.html">가맹 문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <!-- ham-menu -->
+                <ul class="gnb-m">
+                    <li><a href="./knotted.html">Knotted</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./store.html">Store</a></li>
+                    <li>
+                        <a href="#none">Community</a>
+                        <ul class="depth2-m">
+                            <li><a href="./community-news.html">NEWS</a></li>
+                            <li><a href="./community-event.html">EVENT</a></li>
+                            <li><a href="./community-faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#none">Franchise</a>
+                        <ul class="depth2-m">
+                            <li><a href="./franchise-competition.html">경쟁력</a></li>
+                            <li><a href="./franchise-procedure.html">개설 절차</a></li>
+                            <li><a href="./franchise-ask.html">가맹 문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="ham-open"></div>
+                <div class="ham-close"></div>
+                <!-- //ham-menu -->
+                </div>
+            </header>
+            <!-- //header -->
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper full">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/main-slide1-m.png" media="(max-width: 767px)" />
+                        <img src="./img/main-slide1.png" alt="신메뉴 슬라이드 배너" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/main-slide2-m.png" media="(max-width: 767px)" />
+                        <img src="./img/main-slide2.png" alt="홍대 팝업 슬라이드 배너" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/main-slide3-m.png" media="(max-width: 767px)" />
+                        <img src="./img/main-slide3.png" alt="옐로우,핑크,민트 스마일리로 둘러쌓인 옐로우 노티드 로고가 중앙에 위치한 이미지 슬라이드 배너" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/main-slide4-m.png" media="(max-width: 767px)" />
+                        <img src="./img/main-slide4.png" alt="노란색,흰색 체커보드 배경에 중앙에 핑크 슈가베어와 민트색 노티드 로고 이미지 슬라이드배너" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="./img/main-slide5-m.png" media="(max-width: 767px)" />
+                        <img src="./img/main-slide5.png" alt="배스킨라빈스31 콜라보 슬라이드 배너" />
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- //Swiper -->
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+
+        <!-- menu-section -->
+        <section class="menu full">
+            <div class="container">
+                <div class="text-wrap">
+                    <h2>BEST MENU</h2>
+                    <div class="explain">
+                        <p>노티드의 가장 대표적인 메뉴</p>
+                        <b>"우유 생크림 도넛"</b>
+                    </div>
+                    <a href="./menu.html" class="btn">view more</a>
+                </div>
+                <ul class="menu-wrap">
+                    <li class="menu-list" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="center-center">
+                        <div class="img-wrap milk"><img src="./img/menu_Milk_Cream_Donut.jpg" alt="우유 생크림 도넛" /></div>
+                        <h3>우유 생크림 도넛</h3>
+                        <span>Milk Cream Donut</span>
+                        <p>
+                            시그니쳐 크림과 바닐라크림이<br />
+                            어우러진 노티드 대표 도넛
+                        </p>
+                    </li>
+                    <li class="menu-list" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
+                        <div class="img-wrap vanilla"><img src="./img/menu_Classic_Vanilla_Donut.jpg" alt="클래식 바닐라 도넛" /></div>
+                        <h3>클래식 바닐라 도넛</h3>
+                        <span>Classic Vanilla Donut</span>
+                        <p>
+                            바닐라 빈이 가득 들어가 더욱 풍부한<br />
+                            바닐라의 맛을 느낄 수 있는 클래식 도넛
+                        </p>
+                    </li>
+                    <li class="menu-list" data-aos="fade-up" data-aos-duration="1400" data-aos-anchor-placement="center-center">
+                        <div class="img-wrap berry"><img src="./img/menu_Strawberry_Cream_Donut.png" alt="스트로베리 크림 도넛" /></div>
+                        <h3>스트로베리 크림 도넛</h3>
+                        <span>Strawberry Cream Donut</span>
+                        <p>
+                            부드러운 노티드 우유 크림과<br />
+                            스트로베리 잼의 상큼함이 어우러진 도넛
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //menu-section -->
+
+        <!-- popup-section -->
+        <section class="popup full">
+            <div class="container pop-up-container">
+                <div class="text-wrap" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="center-center">
+                    <h2>Popup-Store</h2>
+                    <h3># 노티드X진에어</h3>
+                    <p>노티드 안국점 (서울 종로구 북촌로 6-3 1층)</p>
+                    <span>8/19(토) ~ 8/25(금)</span>
+                    <a href="./community-news-angook-popup.html" class="btn" target="_blank">view more</a>
+                </div>
+            </div>
+        </section>
+        <!-- //popup-section -->
+
+        <!-- insta-section -->
+        <section class="insta full">
+            <div class="container">
+                <h2>INSTAGRAM</h2>
+                <ul class="list-wrap" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+                    <li>
+                        <a href="https://www.instagram.com/p/CwM0NjLOXyE/?img_index=1" target="_blank">
+                            <img src="./img/insta1.png" alt="노티드 신메뉴가 펼쳐진 피크닉 인스타 이미지" />
+                            <p>노티드 여름 도넛과 함께 피크닉!🍩</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/p/CwHWuJdJmVn/?img_index=1" target="_blank">
+                            <img src="./img/insta2.png" alt="진열된 진에어 콜라보 도넛 인스타 이미지" />
+                            <p>💚노티드X진에어 | 노티드 안국점 팝업💚</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/p/CtgAPmupxpe/?img_index=1" target="_blank">
+                            <img src="./img/insta3.png" alt="BTS 콜라보 인테리어의 청담점 인스타 이미지" />
+                            <p>💜보라빛으로 물든 노티드 청담점! X BTS💛</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/p/CuqQTxKJpqU/" target="_blank">
+                            <img src="./img/insta4.png" alt="우유 팥빙수 크림도넛과 망고크림 도넛을 들고있는 인스타 이미지 " />
+                            <p>우유 팥빙수 크림 도넛과 망고 크림 도넛🎂</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //insta-section -->
+
+        <!-- footer -->
+        <footer class="full">
+            <div class="container">
+                <div class="logo"></div>
+                <div class="sns-wrap">
+                    <div class="instagram"><a href="https://www.instagram.com/cafeknotted/" target="_blank"></a></div>
+                    <div class="gffg"><a href="https://www.gffg.co.kr/" target="_blank"></a></div>
+                </div>
+                <ul class="content-wrap">
+                    <li>회사명 : 노티드(주식회사 지에프에프지)</li>
+                    <li>대표이사명 : 이준범</li>
+                    <li>사업자등록번호 : 248-81-00620</li>
+                    <li>통신판매업신고번호 : 2020-서울강남-02297</li>
+                    <li>주소 : 서울특별시 강남구 도산대로51길 16</li>
+                </ul>
+                <small>Copyright ⓒ 2023 Knotted. All Rights Reserved.</small>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+        <!-- right-btn-wrap -->
+        <div class="right-btn-wrap">
+            <a href="./franchise-ask.html">가맹문의</a>
+            <a href="#none" class="scroll-top">top</a>
+        </div>
+        <!-- //right-btn-wrap -->
+
+        <!-- mouse effect -->
+        <script type="text/javascript">
+            // <![CDATA[
+            var colours = new Array('#FFCCE0', '#FF96BE', '#FFEB8F', '#B6E2DB', '#55D6C2', '#f9c'); // colours of the hearts
+            var minisize = 20; // smallest size of hearts in pixels
+            var maxisize = 50; // biggest size of hearts in pixels
+            var hearts = 66; // maximum number of hearts on screen
+            var over_or_under = "over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+
+            /*****************************
+            *JavaScript Love Heart Cursor*
+            *  (c)2013+ mf2fm web-design *
+            *   http://www.mf2fm.com/rv  *
+            *  DON'T EDIT BELOW THIS BOX *
+            *****************************/
+            var x = ox = 400;
+            var y = oy = 300;
+            var swide = 800;
+            var shigh = 600;
+            var sleft = sdown = 0;
+            var herz = new Array();
+            var herzx = new Array();
+            var herzy = new Array();
+            var herzs = new Array();
+            var kiss = false;
+
+            if (typeof ('addRVLoadEvent') != 'function') function addRVLoadEvent(funky) {
+                var oldonload = window.onload;
+                if (typeof (oldonload) != 'function') window.onload = funky;
+                else window.onload = function () {
+                    if (oldonload) oldonload();
+                    funky();
+                }
+            }
+
+            addRVLoadEvent(mwah);
+
+            function mwah() {
+                if (document.getElementById) {
+                    var i, heart;
+                    for (i = 0; i < hearts; i++) {
+                        heart = createDiv("auto", "auto");
+                        heart.style.visibility = "hidden";
+                        heart.style.zIndex = (over_or_under == "over") ? "1001" : "0";
+                        heart.style.color = colours[i % colours.length];
+                        heart.style.pointerEvents = "none";
+                        if (navigator.appName == "Microsoft Internet Explorer") heart.style.filter = "alpha(opacity=75)";
+                        else heart.style.opacity = 0.6;
+                        heart.appendChild(document.createTextNode(String.fromCharCode(9829)));
+                        document.body.appendChild(heart);
+                        herz[i] = heart;
+                        herzy[i] = false;
+                    }
+                    set_scroll();
+                    set_width();
+                    herzle();
+                }
+            }
+
+            function herzle() {
+                var c;
+                if (Math.abs(x - ox) > 1 || Math.abs(y - oy) > 1) {
+                    ox = x;
+                    oy = y;
+                    for (c = 0; c < hearts; c++) if (herzy[c] === false) {
+                        herz[c].firstChild.nodeValue = String.fromCharCode(9829);
+                        herz[c].style.left = (herzx[c] = x - minisize / 2) + "px";
+                        herz[c].style.top = (herzy[c] = y - minisize) + "px";
+                        herz[c].style.fontSize = minisize + "px";
+                        herz[c].style.fontWeight = 'normal';
+                        herz[c].style.visibility = 'visible';
+                        herzs[c] = minisize;
+                        break;
+                    }
+                }
+                for (c = 0; c < hearts; c++) if (herzy[c] !== false) blow_me_a_kiss(c);
+                setTimeout("herzle()", 40);
+            }
+
+            document.onmousedown = pucker;
+            document.onmouseup = function () { clearTimeout(kiss); };
+
+            function pucker() {
+                ox = -1;
+                oy = -1;
+                kiss = setTimeout('pucker()', 100);
+            }
+
+            function blow_me_a_kiss(i) {
+                herzy[i] -= herzs[i] / minisize + i % 2;
+                herzx[i] += (i % 5 - 2) / 5;
+                if (herzy[i] < sdown - herzs[i] || herzx[i] < sleft - herzs[i] || herzx[i] > sleft + swide - herzs[i]) {
+                    herz[i].style.visibility = "hidden";
+                    herzy[i] = false;
+                }
+                else if (herzs[i] > minisize + 2 && Math.random() < .5 / hearts) break_my_heart(i);
+                else {
+                    if (Math.random() < maxisize / herzy[i] && herzs[i] < maxisize) herz[i].style.fontSize = (++herzs[i]) + "px";
+                    herz[i].style.top = herzy[i] + "px";
+                    herz[i].style.left = herzx[i] + "px";
+                }
+            }
+
+            function break_my_heart(i) {
+                var t;
+                herz[i].firstChild.nodeValue = String.fromCharCode(9676);
+                herz[i].style.fontWeight = 'bold';
+                herzy[i] = false;
+                for (t = herzs[i]; t <= maxisize; t++) setTimeout('herz[' + i + '].style.fontSize="' + t + 'px"', 60 * (t - herzs[i]));
+                setTimeout('herz[' + i + '].style.visibility="hidden";', 60 * (t - herzs[i]));
+            }
+
+            document.onmousemove = mouse;
+            function mouse(e) {
+                if (e) {
+                    y = e.pageY;
+                    x = e.pageX;
+                }
+                else {
+                    set_scroll();
+                    y = event.y + sdown;
+                    x = event.x + sleft;
+                }
+            }
+
+            window.onresize = set_width;
+            function set_width() {
+                var sw_min = 999999;
+                var sh_min = 999999;
+                if (document.documentElement && document.documentElement.clientWidth) {
+                    if (document.documentElement.clientWidth > 0) sw_min = document.documentElement.clientWidth;
+                    if (document.documentElement.clientHeight > 0) sh_min = document.documentElement.clientHeight;
+                }
+                if (typeof (self.innerWidth) == 'number' && self.innerWidth) {
+                    if (self.innerWidth > 0 && self.innerWidth < sw_min) sw_min = self.innerWidth;
+                    if (self.innerHeight > 0 && self.innerHeight < sh_min) sh_min = self.innerHeight;
+                }
+                if (document.body.clientWidth) {
+                    if (document.body.clientWidth > 0 && document.body.clientWidth < sw_min) sw_min = document.body.clientWidth;
+                    if (document.body.clientHeight > 0 && document.body.clientHeight < sh_min) sh_min = document.body.clientHeight;
+                }
+                if (sw_min == 999999 || sh_min == 999999) {
+                    sw_min = 800;
+                    sh_min = 600;
+                }
+                swide = sw_min;
+                shigh = sh_min;
+            }
+
+            window.onscroll = set_scroll;
+            function set_scroll() {
+                if (typeof (self.pageYOffset) == 'number') {
+                    sdown = self.pageYOffset;
+                    sleft = self.pageXOffset;
+                }
+                else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+                    sdown = document.body.scrollTop;
+                    sleft = document.body.scrollLeft;
+                }
+                else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+                    sleft = document.documentElement.scrollLeft;
+                    sdown = document.documentElement.scrollTop;
+                }
+                else {
+                    sdown = 0;
+                    sleft = 0;
+                }
+            }
+
+            function createDiv(height, width) {
+                var div = document.createElement("div");
+                div.style.position = "absolute";
+                div.style.height = height;
+                div.style.width = width;
+                div.style.overflow = "hidden";
+                div.style.backgroundColor = "transparent";
+                return (div);
+            }
+        // ]]>
+        </script>
+        <!-- mouse effect -->
+    </body>
+</html>

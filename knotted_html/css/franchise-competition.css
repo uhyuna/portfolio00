@@ -1,0 +1,132 @@
+/* color */
+:root {
+    --text-color: #1d1d1d;
+    --main-color: #ffeb8f;
+    --sub-color1: #ff99c0;
+    --sub-color2: #92d3c9;
+}
+
+.gnb > li > a.on:after {
+    background-color: var(--main-color);
+}
+
+/* common */
+section {
+    margin-bottom: 100px;
+}
+section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 95px 0 100px;
+    text-align: center;
+}
+.sub-menu2 a.on {
+    background-color: var(--main-color);
+    color: #000;
+}
+.list-wrap {
+    padding-top: 50px;
+}
+.list-wrap li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.list-wrap li:nth-child(2n) {
+    justify-content: end;
+}
+.list-wrap .text-wrap {
+    width: 55.55%;
+}
+.list-wrap .text-wrap h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.list-wrap .text-wrap p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.list-wrap .list-left .img-wrap {
+    margin-right: 100px;
+}
+.list-wrap .list-left .text-wrap {
+    text-align: left;
+}
+.list-wrap .list-right .text-wrap {
+    margin-right: 100px;
+}
+.list-wrap .list-right .text-wrap {
+    text-align: right;
+}
+
+/* tablet */
+@media screen and (max-width: 1439px) {
+    section h2 {
+        font-size: 36px;
+        margin: 70px 0;
+    }
+    .list-wrap {
+        padding-top: 0;
+    }
+    .list-wrap li {
+        flex-direction: column;
+        padding-bottom: 80px;
+        gap: 80px;
+    }
+    .list-wrap .text-wrap h3 {
+        text-align: center;
+    }
+    .list-wrap .text-wrap p {
+        text-align: center;
+    }
+    .list-wrap .list-left .img-wrap {
+        margin-right: 0;
+    }
+    .list-wrap .list-left .text-wrap {
+        text-align: center;
+    }
+    .list-wrap .list-right .text-wrap {
+        margin-right: 0;
+    }
+    .list-wrap .list-right .text-wrap {
+        text-align: center;
+    }
+    .list-wrap .list-right {
+        flex-direction: column-reverse;
+    }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+    .gnb > li > a.on:after {
+        background-color: transparent;
+      }
+    .gnb > li > a,
+    .depth2 li a {
+        pointer-events: none;
+    }
+    section {
+        margin-bottom: 0;
+    }
+    section h2 {
+        font-size: 26px;
+        margin: 50px 0;
+    }
+    .list-wrap {
+        padding-top: 50px;
+    }
+    .list-wrap img {
+        width: 180px;
+    }
+    .list-wrap li {
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+    .list-wrap .text-wrap h3 {
+        font-size: 18px;
+    }
+    .list-wrap .text-wrap p {
+        font-size: 14px;
+    }
+}
